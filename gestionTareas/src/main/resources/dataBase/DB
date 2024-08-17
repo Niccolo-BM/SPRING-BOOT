@@ -1,0 +1,12 @@
+create database gestionTareas;
+
+use gestionTareas;
+
+create table tareas(
+	id int primary key auto_increment not null,
+    titulo varchar(50),
+    descripcion varchar(150),
+    fecha_creacion date,
+    hora_creacion datetime,
+    estado varchar(50)
+ );
